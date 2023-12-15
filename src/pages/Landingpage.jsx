@@ -16,17 +16,17 @@ function Landingpage() {
 }
 
   return (
-    <>
+    <div style={{backgroundColor:"black"}}>
 
     <Row>
 
-      <Col></Col>
+      
 
-      <Col lg={6}>
-        <h1>Welcome Videoo.com</h1>
-        <p style={{textAlign:'justify'}}>Where user can use their favourite videos. User can upload any youtube videos by copy and paste their url into videoo.com will allow to add and remove their uploaded videos. And also arrange them in different categories by drag and drop. It is free. Tyr it now!</p>
+      <Col lg={6} style={{color:"gray",marginTop:"50px"}}>
+        <h1  style={{color:"white"}}>Welcome Videoo.com</h1>
+        <p style={{textAlign:'justify',marginTop:"30px"}}>Where user can use their favourite videos. User can upload any youtube videos by copy and paste their url into videoo.com will allow to add and remove their uploaded videos. And also arrange them in different categories by drag and drop. It is free. Tyr it now!</p>
 
-        <button className='btn btn-danger' onClick={handlenavigate}>Click Here To Know More</button>
+        <button style={{marginTop:"20px"}} className='btn btn-danger' onClick={handlenavigate}>Get Started </button>
       
       
       
@@ -35,7 +35,7 @@ function Landingpage() {
 
       <Col lg={5}>
 
-        <img className='img-fluid' src="https://helios-i.mashable.com/imagery/articles/03rcHPGUToyz24eL9m24e8Q/hero-image.fill.size_1248x702.v1623370834.jpg" alt="No Image" style={{borderRadius:'50%'}} />
+        <img className='img-fluid' src="https://media.istockphoto.com/id/1330058997/photo/music-listening-concept-vintage-cassette-tape-audio-player-and-headphones.jpg?s=612x612&w=0&k=20&c=FONqiUOPeuuzYcWTAYXIAH3TYkPdibT8iZDmlxJEQ0s=" alt="No Image" style={{borderRadius:'40px',marginTop:'50px',marginLeft:"30px"}} height={'500px'} width={'500px'}/>
 
 
 
@@ -45,7 +45,7 @@ function Landingpage() {
        
 
 
-    </>
+    </div>
   )
 }
 

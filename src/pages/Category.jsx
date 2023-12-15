@@ -185,6 +185,7 @@ function Category({}) {
 
 
       </div>
+      <br />
 
       {
 
@@ -193,14 +194,20 @@ function Category({}) {
 
           <div  droppable onDragOver={e=>dragOver(e)} onDrop={e=>dropped(e,item?.id)}>
             <div className='d-flex justify-content-between border rounded mt-3 p-2'>
-              <h4>{item?.name}</h4>
+              <h4 style={{color:"white"}}>{item?.name}</h4>
               <span><Trash2 color='red' onClick={()=>removeCategory(item?.id)}/></span>
+
+              <br />
+              <br />
+              <br /><br />
 
             <Row>
 
               {
                 item?.allVideos.map((card)=>(
-                  <Col className='p-3 mb-1 sm={12}'>
+                  <Col sm={12} lg={6}>
+
+                    <br /><br />
 
                   <VideoCard card={card}  insideCategory={true}/>
                   
@@ -235,10 +242,10 @@ function Category({}) {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header closeButton>
+        <Modal.Header className='bg-danger' closeButton >
           <Modal.Title>Add Category</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className='bg-dark'>
 
           <Form>
 
@@ -258,11 +265,11 @@ function Category({}) {
           </Form>
 
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='bg-danger' >
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button onClick={handleAddCategory} variant="primary">Add</Button>
+          <Button onClick={handleAddCategory} style={{backgroundColor:"red"}}>Add</Button>
         </Modal.Footer>
       </Modal>
 

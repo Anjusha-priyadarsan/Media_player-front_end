@@ -11,7 +11,7 @@ import Watchhistory from './pages/Watchhistory';
 
 function App() {
   return (
-    <>
+    <div style={{backgroundColor:"black"}}>
 
     <Header />
 
@@ -35,13 +35,16 @@ function App() {
 
     </div>
 
-
+<br />
+<br />
+<br />
+<br />
 
     
 
     <Footer />
      
-    </>
+    </div>
   );
 }
 

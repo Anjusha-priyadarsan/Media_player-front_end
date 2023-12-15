@@ -83,11 +83,11 @@ function VideoCard({card, handleDeleteStatus, insideCategory}) {
 
       <div>
         {/*bootstrap card */}
-        <Card className='shadow' draggable onDragStart={e=>dragStarted(e,card?.id)}>
+        <Card className='shadow' draggable onDragStart={e=>dragStarted(e,card?.id)} >
           <Card.Img variant="top" src={card?.thumbnail} height={'200px'} onClick={handleShow} />
-          <Card.Body>
+          <Card.Body style={{backgroundColor:"black"}}>
             <Card.Title>
-              <span>{card?.caption}</span>
+              <span style={{color:"white"}}>{card?.caption}</span>
               <span>
                 {/* react feather icon */}
                 
@@ -107,7 +107,7 @@ function VideoCard({card, handleDeleteStatus, insideCategory}) {
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Video Caption</Modal.Title>
+            <Modal.Title>{card?.caption}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
           <iframe width='100%' height='400px' src={`${card?.url}?autoplay=1`} title="Neela Nilave - Video Song | RDX | Kapil Kapilan | Sam CS | Shane Nigam,Antony Varghese,Neeraj Madhav" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

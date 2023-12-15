@@ -117,7 +117,7 @@ function Add({handleresponse}) {
 
     <div onClick={handleShow} className='btn'>
 
-        <PlusCircle color='orange' size={90}/>
+        <PlusCircle color='red' size={50}/> &nbsp; <span style={{color:"orange"}}>Add New One</span>
     </div>
 
     {/* modal */}
@@ -128,28 +128,28 @@ function Add({handleresponse}) {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Upload Video Details</Modal.Title>
+       >
+        <Modal.Header closeButton className='bg-danger'>
+          <Modal.Title >Upload Video Details</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Form>
+        <Modal.Body className='bg-dark'>
+          <Form >
 
             {/* id */}
-          <FloatingLabel  className='mb-3' controlId="floatingPassword" label="id">
-          <Form.Control onChange={setInput} type="text" placeholder="Uploading video id"  name='id' />
+          <FloatingLabel  className='mb-3 ' controlId="floatingPassword" label="id">
+          <Form.Control  onChange={setInput} type="text" placeholder="Uploading video id"  name='id' />
           </FloatingLabel>
 
           {/* caption */}
 
-          <FloatingLabel  className='mb-3' controlId="floatingPassword" label="Uploading Video caption">
+          <FloatingLabel className=' mb-3' controlId="floatingPassword" label="Uploading Video caption">
           <Form.Control onChange={setInput} type="text" placeholder=" Video caption" name='caption'  />
           </FloatingLabel>
 
         {/* video cover img url */}
 
           <FloatingLabel  className='mb-3' controlId="floatingimage" label="video cover image url">
-          <Form.Control onChange={setInput} type="text" placeholder="video cover image url"  name='thumbnail' />
+          <Form.Control  onChange={setInput} type="text" placeholder="video cover image url"  name='thumbnail' />
           </FloatingLabel>
 
           {/* Uploading video link */}
@@ -167,11 +167,11 @@ function Add({handleresponse}) {
 
 
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='bg-danger' >
           <Button variant="secondary" onClick={handleClose}>
             Cancel
           </Button>
-          <Button variant="primary" onClick={handleAdd}>Add</Button>
+          <Button style={{backgroundColor:"red"}} onClick={handleAdd}>Add</Button>
         </Modal.Footer>
       </Modal>
 

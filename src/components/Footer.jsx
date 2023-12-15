@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
     
-    <p className='text-center'>All Rights Reserved &copy;  <Upload /> <b>Videoo.com</b> &reg; 2023</p>
+    <p className='text-center text-light'>All Rights Reserved &copy;  <Upload style={{color:"orange"}}/> <b>Videoo.com</b> &reg; 2023</p>
     
     
     </>

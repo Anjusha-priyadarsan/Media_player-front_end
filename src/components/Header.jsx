@@ -8,17 +8,17 @@ function Header() {
     return (
         <div>
 
-            <Navbar className="bg-primary">
-                <Container>
-                    <Navbar.Brand >
-                        <span className='text-light'>
+            <Navbar className="bg-danger">
+                <Container className="bg-danger">
+                    <Navbar.Brand className="bg-danger" >
+                        <span className='text-light bg-danger '>
 
 
                             {/* React feather icon */}
 
-                            <Link to={'/'} style={{textDecoration:'none',color:'white'}}> 
+                            <Link to={'/'} style={{textDecoration:'none',color:'white'}} className="bg-danger"> 
 
-                                <Upload /> <span>Videoo.com</span>
+                                <Upload className="bg-danger"/> <span className="bg-danger ">Videoo.com</span>
     
                             </Link>
                         </span>

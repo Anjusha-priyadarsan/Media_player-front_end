@@ -29,7 +29,7 @@ console.log(history);
   return (
     <>
 
-    <h5>Watch History</h5>
+    <h5 style={{color:"red",fontWeight:"BOLD"}}>Watch History</h5> <br />
 
     <div>
     <Table striped bordered hover>

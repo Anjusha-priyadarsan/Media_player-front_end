@@ -47,7 +47,7 @@ const handleDeleteStatus=(res)=>{
   return (
     <>
 
-    <div className='border p-3 m-4 rounded'>
+    <div className='border p-3 rounded'>
 
             <Row>
 
@@ -57,7 +57,7 @@ const handleDeleteStatus=(res)=>{
 
                 allVideos.map(video=>(
 
-                  <Col className='p-3 m-3' sm={12} md={6}>
+                  <Col className='p-1 ' sm={6} md={6} >
 
                    <VideoCard card={video} handleDeleteStatus={handleDeleteStatus}/>
                       

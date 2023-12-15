@@ -19,26 +19,41 @@ const handleresponse=(res)=>{
 
   return (
     <>
-        <h1 className='text-danger ms-5'>All Video Cards</h1>
-        <br /><br />
-        <Link to={'/watchhistory'} style={{textDecoration:"none",fontSize:"25px",color:"red",}}className='ms-a'>Watch History</Link>
+                {/* add component selector */}
+                                {/* share handle function to add component */}
 
+
+      
+        <Add  handleresponse={handleresponse}/> 
+          
+          
+  
+                 
+        
+<br />
+        <Row>
+          <Col lg={6}>
+            <h2 className='text-danger ' style={{marginLeft:"20px"}}>All Videos </h2>
+  
+          </Col>
+          <Col lg={6}>
+
+          <Link to={'/watchhistory'} style={{textDecoration:"none",fontSize:"20px",color:"red",marginLeft:"380PX",fontWeight:"bold"}}className='ms-a'>Watch History</Link>
+
+
+
+  
+          </Col>  
+        </Row>
+        
         <div className='container-fluid'>
           
           <Row>
-            {/* add component selector */}
 
-              <Col lg={1}>
-
-                {/* share handle function to add component */}
-
-                <Add  handleresponse={handleresponse}/>  
-
-              </Col>
 
                 {/* view component selector */}
 
-              <Col lg={7}>
+              <Col lg={6}>
 
                 <View  serverRes={serverRes}/>
 
@@ -46,7 +61,9 @@ const handleresponse=(res)=>{
 
                 {/* add component selector */}
 
-              <Col lg={4}>
+              <Col lg={6}>
+                <br />
+                
 
                 <Category serverRes={serverRes}/>
 
